@@ -23,3 +23,4 @@ Calling `npm run all` will create the following files:
 * `wikidata.ndjson`
 * `dante.ndjson`
 
+Call `npm run validate` to validate the files.

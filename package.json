@@ -3,6 +3,7 @@
   "description": "Source files and script to aggregate information about concept schemes",
   "scripts": {
     "all": "npm run kos; npm run wikidata; npm run dante",
+    "validate": "jskos-validate schemes *.ndjson",
 	  "kos": "./yaml2ndjson.js kos.yaml > kos.ndjson",
     "wikidata": "wdjskos schemes > wikidata.ndjson",
     "dante": "curl -sk https://api.dante.gbv.de/voc/ | jq -c .[] > dante.ndjson"
