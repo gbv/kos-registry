@@ -24,3 +24,13 @@ Calling `npm run all` will create the following files:
 * `dante.ndjson`
 
 Call `npm run validate` to validate the files.
+
+## See also
+
+* [cocoda-mappings](https://github.com/gbv/cocoda-mappings/) - repository with mapping data
+* [jskos-data](https://github.com/gbv/jskos-data/) - repository with concept schemes including concepts
+
+## License
+
+All data in this repository can be used freely as public domain ([Creative
+Commons Zero v1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/))
