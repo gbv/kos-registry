@@ -52,11 +52,15 @@ stw:
   notation: ['STW']
   namespace: 'http://zbw.eu/stw/descriptor/'
   notationPattern: '[0-9]+-[0-9]'
+  EXAMPLES: 
+  - 13492-2
 
 lcsh:
   uri: 'http://bartoc.org/en/node/454'
   notation: ['LCSH']
   namespace: 'http://id.loc.gov/authorities/subjects/'
+  EXAMPLES: 
+  - sh2018002121
 
 ulan:
   uri: 'http://bartoc.org/en/node/910'
@@ -69,12 +73,16 @@ viaf:
   notation: ['VIAF']
   namespace: 'http://viaf.org/viaf/'
   notationPattern: '[1-9]\d(\d{0,7}|\d{17,20})'
+  EXAMPLES: 
+  - partnerpages/DNB
 
 ixtheo:
   uri: 'http://www.ixtheo.de/classification/'
   notation: ['ixtheo']
   namespace: 'http://www.ixtheo.de/classification/'
   notationPattern: '[A-Z][A-Z]?[A-Z]?'
+  EXAMPLES:
+  - FD
 
 lcc:
   uri: http://bartoc.org/en/node/486
@@ -101,6 +109,8 @@ asb:
   prefLabel:
     de: Allgemeine Systematik für Öffentliche Bibliotheken
   uri: http://bartoc.org/en/node/732
+  EXAMPLES:
+  - ASB:H/2019
 
 ssd:
   CQLKEY: SSD
@@ -121,6 +131,8 @@ sfb:
   prefLabel:
     de: Systematik für Bibliotheken
   uri: http://bartoc.org/en/node/335
+  EXAMPLES:
+  - EDV_5
 
 kab:
   uri: http://bartoc.org/en/node/1031
@@ -141,6 +153,8 @@ aadgenres:
   - aadgenres
   namespace: http://uri.gbv.de/terminology/aadgenres/
   notationPattern: '[0-9]{8}[0-9X]'
+  EXAMPLES:
+  - 096630701
 
 nlm:
   uri: http://bartoc.org/en/node/528
