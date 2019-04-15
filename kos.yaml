@@ -76,6 +76,17 @@ ixtheo:
   namespace: 'http://www.ixtheo.de/classification/'
   notationPattern: '[A-Z][A-Z]?[A-Z]?'
 
+lcc:
+  uri: http://bartoc.org/en/node/486
+  prefLabel:
+    en: Library of Congress Classification
+  notation:
+  - LCC
+  identifier:
+  - http://id.loc.gov/authorities/classification
+  namespace: http://id.loc.gov/authorities/classification/
+  PICAPATH: 045A$a
+
 # not fully supported yet
 asb:
   CQLKEY: ASB
@@ -128,3 +139,11 @@ aadgenres:
   namespace: http://uri.gbv.de/terminology/aadgenres/
   notationPattern: '[0-9]{8}[0-9X]'
 
+nlm:
+  uri: http://bartoc.org/en/node/528
+  notation:
+  - NLM
+  prefLabel:
+    en: National Library of Medicine Classification
+  namespace: https://www.nlm.nih.gov/class/
+  PICAPATH: 045C$a
