@@ -4,7 +4,7 @@
   "scripts": {
     "all": "npm run kos; npm run wikidata; npm run dante",
     "validate": "jskos-validate schemes *.ndjson",
-	  "kos": "./yaml2ndjson.js kos.yaml > kos.ndjson",
+    "kos": "./yaml2ndjson.js kos.yaml > kos.ndjson",
     "wikidata": "wdjskos schemes > wikidata.ndjson",
     "dante": "curl -sk https://api.dante.gbv.de/voc/ | jq -c .[] > dante.ndjson"
   },
@@ -12,7 +12,7 @@
   "license": "MIT",
   "dependencies": {
     "jskos-cli": "^0.2.3",
-    "jskos-tools": "^0.2.0",
+    "jskos-tools": "^0.2.3",
     "jskos-validate": "^0.2.1",
     "wikidata-jskos": "^0.1.0",
     "yaml": "^1.4.0"
