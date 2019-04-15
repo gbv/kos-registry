@@ -122,7 +122,7 @@ kab:
 aadgenres:
   uri: http://uri.gbv.de/terminology/aadgenres/
   prefLabel:
-    de: Gattungsbegriffe der Arbeitsgemeinschaft Alte Drucke beim GBV und SWB
+    de: AAD Gattungsgenres
   notation:
   - aadgenres
   namespace: http://uri.gbv.de/terminology/aadgenres/
