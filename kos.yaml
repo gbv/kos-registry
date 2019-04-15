@@ -118,3 +118,13 @@ kab:
   - KAB
   prefLabel:
     de: Klassifikation für Allgemeinbibliotheken
+
+aadgenres:
+  uri: http://uri.gbv.de/terminology/aadgenres/
+  prefLabel:
+    de: Gattungsbegriffe der Arbeitsgemeinschaft Alte Drucke beim GBV und SWB
+  notation:
+  - aadgenres
+  namespace: http://uri.gbv.de/terminology/aadgenres/
+  notationPattern: '[0-9]{8}[0-9X]'
+
