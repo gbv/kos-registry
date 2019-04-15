@@ -2,7 +2,7 @@
   "name": "kos-registry",
   "description": "Source files and script to aggregate information about concept schemes",
   "scripts": {
-    "all": "npm run kos; npm run wikidata; npm run dante",
+    "all": "npm run kos; npm run wikidata; npm run dante; ./combine.js kos.ndjson dante.ndjson wikidata.ndjson",
     "validate": "jskos-validate schemes *.ndjson",
     "kos": "./yaml2ndjson.js kos.yaml > kos.ndjson",
     "wikidata": "wdjskos schemes > wikidata.ndjson",
