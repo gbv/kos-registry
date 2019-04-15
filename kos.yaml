@@ -22,7 +22,7 @@ rvk:
   CQLKEY: rvk
   EXAMPLES:
   - GB_3022
-  PICAPATH: 045T$a
+  PICAPATH: 045R$a
 
 bk:
   uri: http://bartoc.org/en/node/18785
@@ -34,7 +34,7 @@ bk:
   CQLKEY: BKL
   EXAMPLES:
   - '86.78'
-  PICAPATH: 045Q$a
+  PICAPATH: 045Q[0X]$a
 
 gnd:
   uri: http://bartoc.org/en/node/430
