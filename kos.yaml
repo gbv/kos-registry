@@ -86,8 +86,11 @@ lcc:
   - http://id.loc.gov/authorities/classification
   namespace: http://id.loc.gov/authorities/classification/
   PICAPATH: 045A$a
+  EXAMPLES: 
+  - B1-5802
 
-# not fully supported yet
+
+#not fully supported yet
 asb:
   CQLKEY: ASB
   EXAMPLES:
@@ -147,3 +150,5 @@ nlm:
     en: National Library of Medicine Classification
   namespace: https://www.nlm.nih.gov/class/
   PICAPATH: 045C$a
+  EXAMPLES: 
+  - QU 21
