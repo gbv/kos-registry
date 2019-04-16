@@ -11,6 +11,8 @@ ddc:
   EXAMPLES:
   - '612.112'
   PICAPATH: 045F$a
+  type:
+  - http://w3id.org/nkos/nkostype#classification_schema
 
 rvk:
   uri: http://bartoc.org/en/node/533
@@ -23,6 +25,8 @@ rvk:
   EXAMPLES:
   - 'GB 3022'
   PICAPATH: 045R$a
+  type:
+  - http://w3id.org/nkos/nkostype#classification_schema
 
 bk:
   uri: http://bartoc.org/en/node/18785
@@ -35,6 +39,8 @@ bk:
   EXAMPLES:
   - '86.78'
   PICAPATH: 045Q[0X]$a
+  type:
+  - http://w3id.org/nkos/nkostype#classification_schema
 
 gnd:
   uri: http://bartoc.org/en/node/430
@@ -46,43 +52,56 @@ gnd:
   CQLKEY: GND
   EXAMPLES:
   - '118540475'
+  type:
+  - http://w3id.org/nkos/nkostype#classification_schema
+  - http://w3id.org/nkos/nkostype#subject_heading_scheme
 
 stw:
-  uri: 'http://bartoc.org/en/node/313'
+  uri: http://bartoc.org/en/node/313
   notation: ['STW']
-  namespace: 'http://zbw.eu/stw/descriptor/'
+  namespace: http://zbw.eu/stw/descriptor/
   notationPattern: '[0-9]+-[0-9]'
   EXAMPLES: 
   - 13492-2
+  type:
+  - http://w3id.org/nkos/nkostype#thesaurus
 
 lcsh:
-  uri: 'http://bartoc.org/en/node/454'
+  uri: http://bartoc.org/en/node/454
   notation: ['LCSH']
-  namespace: 'http://id.loc.gov/authorities/subjects/'
+  namespace: http://id.loc.gov/authorities/subjects/
   EXAMPLES: 
   - sh2018002121
+  type:
+  - http://w3id.org/nkos/nkostype#subject_heading_scheme
 
 ulan:
-  uri: 'http://bartoc.org/en/node/910'
+  uri: http://bartoc.org/en/node/910
   notation: ['ULAN']
   notationPattern: '500[0-9]{6}'
-  namespace: 'http://vocab.getty.edu/ulan/'
+  namespace: http://vocab.getty.edu/ulan/
+  type:
+  - http://w3id.org/nkos/nkostype#ontology
 
 viaf:
-  uri: 'http://bartoc.org/en/node/2053'
+  uri: http://bartoc.org/en/node/2053
   notation: ['VIAF']
-  namespace: 'http://viaf.org/viaf/'
+  namespace: http://viaf.org/viaf/
   notationPattern: '[1-9]\d(\d{0,7}|\d{17,20})'
   EXAMPLES: 
   - '305154173'
+  type:
+  - http://w3id.org/nkos/nkostype#name_authority_list
 
 ixtheo:
-  uri: 'http://www.ixtheo.de/classification/'
+  uri: http://bartoc.org/en/node/18797
   notation: ['ixtheo']
-  namespace: 'http://www.ixtheo.de/classification/'
+  namespace: http://www.ixtheo.de/classification/
   notationPattern: '[A-Z][A-Z]?[A-Z]?'
   EXAMPLES:
   - FD
+  type:
+  - http://w3id.org/nkos/nkostype#classification_schema
 
 lcc:
   uri: http://bartoc.org/en/node/486
@@ -96,6 +115,8 @@ lcc:
   PICAPATH: 045A$a
   EXAMPLES: 
   - B1-B5802
+  type:
+  - http://w3id.org/nkos/nkostype#classification_schema
 
 #not fully supported yet
 asb:
@@ -109,6 +130,8 @@ asb:
   EXAMPLES:
   - By
   - H
+  type:
+  - http://w3id.org/nkos/nkostype#classification_schema
 
 ssd:
   notation:
@@ -120,6 +143,8 @@ ssd:
   EXAMPLES:
   - BA
   PICAPATH: 045B[01]$a
+  type:
+  - http://w3id.org/nkos/nkostype#classification_schema
 
 sfb:
   CQLKEY: SFB
@@ -131,6 +156,8 @@ sfb:
   uri: http://bartoc.org/en/node/335
   EXAMPLES:
   - EDV 5
+  type:
+  - http://w3id.org/nkos/nkostype#classification_schema
 
 kab:
   uri: http://bartoc.org/en/node/1031
@@ -142,6 +169,8 @@ kab:
   EXAMPLES:
   - A 900
   PICAPATH: 045B[03]$a
+  type:
+  - http://w3id.org/nkos/nkostype#classification_schema
 
 aadgenres:
   uri: http://uri.gbv.de/terminology/aadgenres/
@@ -153,6 +182,8 @@ aadgenres:
   notationPattern: '[0-9]{8}[0-9X]'
   EXAMPLES:
   - '096630701'
+  type:
+  - http://w3id.org/nkos/nkostype#classification_schema
 
 nlm:
   uri: http://bartoc.org/en/node/528
@@ -164,4 +195,6 @@ nlm:
   PICAPATH: 045C$a
   EXAMPLES: 
   - QU 21
+  type:
+  - http://w3id.org/nkos/nkostype#classification_schema
 
