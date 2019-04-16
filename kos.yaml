@@ -197,4 +197,203 @@ nlm:
   - QU 21
   type:
   - http://w3id.org/nkos/nkostype#classification_schema
+  
+ösöb:
+  prefLabel:
+    de: Östereichische Systematik für Öffentliche Bibliotheken
+  uri: http://bartoc.org/en/node/742
+  type:
+  - http://w3id.org/nkos/nkostype#classification_schema
+  notation: 
+  - ÖSÖB
 
+bos:
+  prefLabel:
+    de: Bremer Online Systematik
+  uri: http://bartoc.org/en/node/730
+  type:
+  - http://w3id.org/nkos/nkostype#classification_schema
+  notation:
+  - BOS
+
+fkdigbib:
+  prefLabel:
+    de: Fachklassifikation Digitale Bibliothek
+  uri: http://bartoc.org/en/node/1699
+  type:
+  - http://w3id.org/nkos/nkostype#classification_schema
+  notation:
+  - FKDigBib
+
+kfm:
+  prefLabel:
+    de: Klassifikation für Musikbibliotheken
+  uri: http://bartoc.org/en/node/1941
+  type:
+  - http://w3id.org/nkos/nkostype#classification_schema
+  notation:
+  - KfM
+  
+  coct:
+    prefLabel:
+      en: Classification for orthodox church and theology
+    uri: http://bartoc.org/en/node/1302
+    type:
+    - http://w3id.org/nkos/nkostype#classification_schema
+    notation:
+    - Coct
+
+ghb:
+  prefLabel:
+    de: Gesamthochschulbibliotheken-Aufstellungssystematik
+  uri: http://bartoc.org/en/node/197
+  type:
+  - http://w3id.org/nkos/nkostype#classification_schema
+  notation:
+  - GHB
+  
+essb:
+  prefLabel:
+    de: Einheitssystematik für Südtiroler Bibliotheken
+  uri: http://bartoc.org/en/node/743
+  type: 
+  - http://w3id.org/nkos/nkostype#classification_schema
+  notation:
+  - ESSB
+
+fbup:
+  prefLabel:
+    de: Fachsystematik Bücher Universitätsbibliothek Paderborn
+  uri: http://bartoc.org/en/node/1708
+  type:
+  - http://w3id.org/nkos/nkostype#classification_schema
+  notation:
+  - FBUP
+  
+fud:
+  prefLabel:
+    de: Fachsystematiken der Universitätsbibliothek Dortmund
+  uri: http://bartoc.org/en/node/1944
+  type:
+  - http://w3id.org/nkos/nkostype#classification_schema
+  notation:
+  - FUD
+
+fum:
+  prefLabel:
+    de: Fachsystematiken der Universitätsbibliothek Marburg
+  uri: http://bartoc.org/en/node/1945
+  type:
+  - http://w3id.org/nkos/nkostype#classification_schema
+  notation:
+  - FUM
+  
+gok:
+  prefLabel:
+    de: Göttinger Online-Klassifikation
+  uri: http://bartoc.org/en/node/1323
+  type:
+  - http://w3id.org/nkos/nkostype#classification_schema
+  notation:
+  - GOK
+  
+dekla:
+  prefLabel:
+    de: Klassifikation des Deutschen Patent- und Markenamts
+  uri: http://bartoc.org/en/node/2030
+  type:
+  - http://w3id.org/nkos/nkostype#classification_schema
+  notation:
+  - DEKLA
+  
+konsys:
+  prefLabel:
+    de: Konstanzer Systematik
+  uri: http://bartoc.org/en/node/1443
+  type:
+  - http://w3id.org/nkos/nkostype#classification_schema
+  notation:
+  - KonSys
+  
+fuld:
+  prefLabel:
+    de: Fachsystematik der Universitäts- und Landesbibliothek Düsseldorf
+  uri: http://bartoc.org/en/node/1086
+  type:
+  - http://w3id.org/nkos/nkostype#classification_schema
+  notation:
+  - FULD
+  
+msc:
+  prefLabel:
+    en: Mathematics Subject Classification
+  uri: http://bartoc.org/en/node/474
+  type:
+  - http://w3id.org/nkos/nkostype#classification_schema
+  notation:
+  - MSC
+  
+skb:
+  prefLabel:
+    de: Sachbuch-Systematik für Katholische öffentliche Büchereien
+  uri: http://bartoc.org/en/node/1325
+  type:
+  - http://w3id.org/nkos/nkostype#classification_schema
+  notation:
+  - SKB
+  
+pacs:
+  prefLabel:
+    en: Physics and Astronomy Classification Scheme
+  uri: http://bartoc.org/en/node/473
+  type:
+  - http://w3id.org/nkos/nkostype#classification_schema
+  notation:
+  - PACS
+  
+sulb:
+  prefLabel:
+    de: Systematik der Universitäts- und Landesbibliothek Bonn
+  uri: http://bartoc.org/en/node/1707
+  type:
+  - http://w3id.org/nkos/nkostype#classification_schema
+  notation:
+  - SULB
+  
+seb:
+  prefLabel:
+    de: Systematik für Evangelische Büchereien
+  uri: http://bartoc.org/en/node/1324
+  type:
+  - http://w3id.org/nkos/nkostype#classification_schema
+  notation:
+  - SEB  
+    
+skj:
+  prefLabel:
+    de: Systematik für Kinder- und Jugendbibliotheken
+  uri: http://bartoc.org/en/node/1050
+  type:
+  - http://w3id.org/nkos/nkostype#classification_schema
+  notation:
+  - SKJ
+  
+
+   
+tum:
+  prefLabel:
+    de: TUM-Systematik
+  uri: http://bartoc.org/en/node/495
+  type: 
+  - http://w3id.org/nkos/nkostype#classification_schema
+  notation:
+  - TUM
+  
+udc:
+  prefLabel:
+    en: Universal Decimal Classification
+  uri: http://bartoc.org/en/node/496
+  type:
+  - http://w3id.org/nkos/nkostype#classification_schema
+  notation:
+  - UDC
