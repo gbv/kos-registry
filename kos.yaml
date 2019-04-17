@@ -215,6 +215,7 @@ bos:
   - http://w3id.org/nkos/nkostype#classification_schema
   notation:
   - BOS
+  notationPattern: '[a-z]{3} [0-9]{3}(\.[0-9]+)?( [a-z]+)?'
 
 fkdigbib:
   prefLabel:
@@ -377,9 +378,7 @@ skj:
   - http://w3id.org/nkos/nkostype#classification_schema
   notation:
   - SKJ
-  
-
-   
+ 
 tum:
   prefLabel:
     de: TUM-Systematik
