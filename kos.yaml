@@ -61,7 +61,7 @@ stw:
   notation: ['STW']
   namespace: http://zbw.eu/stw/descriptor/
   notationPattern: '[0-9]+-[0-9]'
-  EXAMPLES: 
+  EXAMPLES:
   - 13492-2
   type:
   - http://w3id.org/nkos/nkostype#thesaurus
@@ -70,7 +70,7 @@ lcsh:
   uri: http://bartoc.org/en/node/454
   notation: ['LCSH']
   namespace: http://id.loc.gov/authorities/subjects/
-  EXAMPLES: 
+  EXAMPLES:
   - sh2018002121
   type:
   - http://w3id.org/nkos/nkostype#subject_heading_scheme
@@ -88,7 +88,7 @@ viaf:
   notation: ['VIAF']
   namespace: http://viaf.org/viaf/
   notationPattern: '[1-9]\d(\d{0,7}|\d{17,20})'
-  EXAMPLES: 
+  EXAMPLES:
   - '305154173'
   type:
   - http://w3id.org/nkos/nkostype#name_authority_list
@@ -113,7 +113,7 @@ lcc:
   - http://id.loc.gov/authorities/classification
   namespace: http://id.loc.gov/authorities/classification/
   PICAPATH: 045A$a
-  EXAMPLES: 
+  EXAMPLES:
   - B1-B5802
   type:
   - http://w3id.org/nkos/nkostype#classification_schema
@@ -193,18 +193,18 @@ nlm:
     en: National Library of Medicine Classification
   namespace: https://www.nlm.nih.gov/class/
   PICAPATH: 045C$a
-  EXAMPLES: 
+  EXAMPLES:
   - QU 21
   type:
   - http://w3id.org/nkos/nkostype#classification_schema
-  
+
 ösöb:
   prefLabel:
     de: Östereichische Systematik für Öffentliche Bibliotheken
   uri: http://bartoc.org/en/node/742
   type:
   - http://w3id.org/nkos/nkostype#classification_schema
-  notation: 
+  notation:
   - ÖSÖB
 
 bos:
@@ -234,7 +234,7 @@ kfm:
   - http://w3id.org/nkos/nkostype#classification_schema
   notation:
   - KfM
-  
+
   coct:
     prefLabel:
       en: Classification for orthodox church and theology
@@ -252,12 +252,12 @@ ghb:
   - http://w3id.org/nkos/nkostype#classification_schema
   notation:
   - GHB
-  
+
 essb:
   prefLabel:
     de: Einheitssystematik für Südtiroler Bibliotheken
   uri: http://bartoc.org/en/node/743
-  type: 
+  type:
   - http://w3id.org/nkos/nkostype#classification_schema
   notation:
   - ESSB
@@ -270,7 +270,7 @@ fbup:
   - http://w3id.org/nkos/nkostype#classification_schema
   notation:
   - FBUP
-  
+
 fud:
   prefLabel:
     de: Fachsystematiken der Universitätsbibliothek Dortmund
@@ -288,7 +288,7 @@ fum:
   - http://w3id.org/nkos/nkostype#classification_schema
   notation:
   - FUM
-  
+
 gok:
   prefLabel:
     de: Göttinger Online-Klassifikation
@@ -297,7 +297,7 @@ gok:
   - http://w3id.org/nkos/nkostype#classification_schema
   notation:
   - GOK
-  
+
 dekla:
   prefLabel:
     de: Klassifikation des Deutschen Patent- und Markenamts
@@ -306,7 +306,7 @@ dekla:
   - http://w3id.org/nkos/nkostype#classification_schema
   notation:
   - DEKLA
-  
+
 konsys:
   prefLabel:
     de: Konstanzer Systematik
@@ -315,7 +315,7 @@ konsys:
   - http://w3id.org/nkos/nkostype#classification_schema
   notation:
   - KonSys
-  
+
 fuld:
   prefLabel:
     de: Fachsystematik der Universitäts- und Landesbibliothek Düsseldorf
@@ -324,7 +324,7 @@ fuld:
   - http://w3id.org/nkos/nkostype#classification_schema
   notation:
   - FULD
-  
+
 msc:
   prefLabel:
     en: Mathematics Subject Classification
@@ -333,7 +333,7 @@ msc:
   - http://w3id.org/nkos/nkostype#classification_schema
   notation:
   - MSC
-  
+
 skb:
   prefLabel:
     de: Sachbuch-Systematik für Katholische öffentliche Büchereien
@@ -342,7 +342,7 @@ skb:
   - http://w3id.org/nkos/nkostype#classification_schema
   notation:
   - SKB
-  
+
 pacs:
   prefLabel:
     en: Physics and Astronomy Classification Scheme
@@ -351,7 +351,7 @@ pacs:
   - http://w3id.org/nkos/nkostype#classification_schema
   notation:
   - PACS
-  
+
 sulb:
   prefLabel:
     de: Systematik der Universitäts- und Landesbibliothek Bonn
@@ -360,7 +360,7 @@ sulb:
   - http://w3id.org/nkos/nkostype#classification_schema
   notation:
   - SULB
-  
+
 seb:
   prefLabel:
     de: Systematik für Evangelische Büchereien
@@ -368,8 +368,8 @@ seb:
   type:
   - http://w3id.org/nkos/nkostype#classification_schema
   notation:
-  - SEB  
-    
+  - SEB
+
 skj:
   prefLabel:
     de: Systematik für Kinder- und Jugendbibliotheken
@@ -378,16 +378,16 @@ skj:
   - http://w3id.org/nkos/nkostype#classification_schema
   notation:
   - SKJ
- 
+
 tum:
   prefLabel:
     de: TUM-Systematik
   uri: http://bartoc.org/en/node/495
-  type: 
+  type:
   - http://w3id.org/nkos/nkostype#classification_schema
   notation:
   - TUM
-  
+
 udc:
   prefLabel:
     en: Universal Decimal Classification
@@ -396,3 +396,17 @@ udc:
   - http://w3id.org/nkos/nkostype#classification_schema
   notation:
   - UDC
+
+wd:
+  prefLabel:
+    en: Wikidata
+  uri: http://bartoc.org/en/node/1940
+  notation:
+  - WD
+  identifier:
+  - http://www.wikidata.org/entity/2013
+  languages:
+  - de
+  - en
+  license:
+  - uri: http://creativecommons.org/publicdomain/zero/1.0/
