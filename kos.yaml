@@ -73,6 +73,7 @@ lcsh:
   namespace: http://id.loc.gov/authorities/subjects/
   EXAMPLES:
   - sh2018002121
+  PICAPATH: 044A$a
   type:
   - http://w3id.org/nkos/nkostype#subject_heading_scheme
 
