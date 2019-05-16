@@ -61,6 +61,7 @@ stw:
   notation: ['STW']
   namespace: http://zbw.eu/stw/descriptor/
   notationPattern: '[0-9]+-[0-9]'
+  CQLKEY: STT
   EXAMPLES:
   - 13492-2
   type:
@@ -113,6 +114,7 @@ lcc:
   - http://id.loc.gov/authorities/classification
   namespace: http://id.loc.gov/authorities/classification/
   PICAPATH: 045A$a
+  CQLKEY: LCC
   EXAMPLES:
   - B1-B5802
   type:
@@ -193,6 +195,7 @@ nlm:
     en: National Library of Medicine Classification
   namespace: https://www.nlm.nih.gov/class/
   PICAPATH: 045C$a
+  CQLKEY: NLM
   EXAMPLES:
   - QU 21
   type:
@@ -329,6 +332,7 @@ msc:
   prefLabel:
     en: Mathematics Subject Classification
   uri: http://bartoc.org/en/node/474
+  CQLKEY: MSC
   type:
   - http://w3id.org/nkos/nkostype#classification_schema
   notation:
