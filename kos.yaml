@@ -222,6 +222,7 @@ bos:
   notation:
   - BOS
   notationPattern: '[a-z]{3} [0-9]{3}(\.[0-9]+)?( [a-z]+)?'
+  namespace: http://uri.gbv.de/terminology/bos/
 
 fkdigbib:
   prefLabel:
