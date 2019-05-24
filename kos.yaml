@@ -223,6 +223,11 @@ bos:
   - BOS
   notationPattern: '[a-z]{3} [0-9]{3}(\.[0-9]+)?( [a-z]+)?'
   namespace: http://uri.gbv.de/terminology/bos/
+  publisher:
+    -uri: https://viaf.org/viaf/147181689/
+      prefLabel:
+        de: Staats- und Universitätsbibliothek Bremen
+      url: https://www.suub.uni-bremen.de/
 
 fkdigbib:
   prefLabel:
