@@ -221,7 +221,7 @@ bos:
   - http://w3id.org/nkos/nkostype#classification_schema
   notation:
   - BOS
-  notationPattern: '[a-z]{3} [0-9]{3}(\.[0-9]+)?( [a-z]+)?'
+  notationPattern: '[a-z]{3}( [0-9]{3}(\.[0-9]+)?( [a-z]+)?)?'
   namespace: http://uri.gbv.de/terminology/bos/
   publisher:
   - uri: https://viaf.org/viaf/147181689/
