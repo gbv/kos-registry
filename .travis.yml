@@ -5,11 +5,11 @@ node_js:
 script:
 - npm run all
 - npm run validate
-
 deploy:
   provider: releases
-  api_key: "GITHUB OAUTH TOKEN"
-  file: kos-registry.json
-  skip_cleanup: true
+  api_key:
+    secure: CtOw6aZnNAZzeDqEwEN9lrlnRPoBdi47z6L61phqhgJUxUks19KNRx4n/plrdDkv+Kh7LgBOy3uyXWqFVEzgve30zzzOFJnqEoD/QrrrohnBMH4p2Qkg5hLunlOX3bLpbrsv9QtmiuvE0sx1DH16kUvMI7Tu/3EydHCIuMODlN2qcel9eno931Om+mESeYiKFcQ1SCVdTPY4coJzWC3aPs04hbd9dPfU9RFLk2aymZFdDFWBHm6s/MMCBWban8DRCuJ4LgJuESGvtBXJ7AaIybyhkOoB7KuFIL+60vcTHIrl9MXB2OGl7A5T54Ug0df9Ji/5UueisweRUetz5PSLPve4BNCIlKgxZnoKNVmPs0+BpRAp/RAwIQM5kNBmGGebAjM+Q36wElruRm087f5fy9HY/HIVcW+v0NmWcKY3pFuygszowKRb8lbFDodIqP36KybdCX+wqQ5UldWyWvUXTu5S4xZJr7hotl95jjP9RJTIZvXTg/ekgbyAobb/tpV1tLjqfjLAfWg+De6NqW8e7QniX+MNLJOVPROEhWO1OrPxO9VESG4fWFh/X5gaLINaj3vpFiA4q0cWdrxGW1ZuckPfxKKX13gjdXhCClhoz07FGPpNoQH9VSOwDaOhIbrB8l16U7l5qukeTxEVFOL6yKvoZdRb/mv+Izum3j8hhWA=
+  file: key-registry.json
   on:
+    repo: gbv/kos-registry
     tags: true
