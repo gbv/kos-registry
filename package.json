@@ -2,15 +2,14 @@
   "name": "kos-registry",
   "description": "Source files and script to aggregate information about concept schemes",
   "scripts": {
-    "all": "npm run kos; npm run wikidata; npm run dante; ./combine.js kos.ndjson dante.ndjson wikidata.ndjson",
-    "validate": "jskos-validate schemes *.ndjson",
-    "kos": "./yaml2ndjson.js kos.yaml > kos.ndjson",
+    "all": "make",
     "wikidata": "wdjskos schemes > wikidata.ndjson",
-    "dante": "curl -sk https://api.dante.gbv.de/voc/ | jq -c .[] > dante.ndjson"
+    "validate": "jskos-validate schemes *.ndjson"
   },
   "author": "Jakob Voß",
   "license": "MIT",
   "dependencies": {
+    "fs-ndjson": "^1.1.0",
     "jskos-cli": "^0.2.3",
     "jskos-tools": "^0.2.3",
     "jskos-validate": "^0.2.1",

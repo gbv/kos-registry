@@ -3,21 +3,31 @@
 const fs = require('fs')
 const { parse } = require('yaml')
 const validate = require('jskos-validate')
+const { guessObjectType } = require('jskos-tools')
 
-const uri = 'http://www.w3.org/2004/02/skos/core#ConceptScheme'
+const typeUris = {
+  scheme: 'http://www.w3.org/2004/02/skos/core#ConceptScheme',
+  registry: 'http://purl.org/cld/cdtype/CatalogueOrIndex'
+}
+
+const typeName = process.argv[2]
+if (!typeUris[typeName]) {
+  console.error("Missing JSKOS resource type as first argument")
+  process.exit(1)
+}
+
 let error = 0
-
-process.argv.splice(2).forEach( file => {
-  let kos = parse(fs.readFileSync(file, 'utf8'))
-  Object.keys(kos).forEach( id => {
-    const type = (kos[id].type = kos[id].type || [])
-    if (type[0] !== uri) {
-      type.unshift(uri) 
-    }
-    if (validate.scheme(kos[id])) {
-      console.log(JSON.stringify(kos[id]))
+process.argv.splice(3).forEach( file => {
+  let item = parse(fs.readFileSync(file, 'utf8'))
+  Object.keys(item).forEach( id => {
+    const type = (item[id].type = item[id].type || [])
+    if (type[0] !== typeUris[typeName]) {
+      type.unshift(typeUris[typeName]) 
+    }    
+    if (validate[typeName](item[id])) {
+      console.log(JSON.stringify(item[id]))
     } else {
-      console.error(`ConceptScheme ${id} in ${file} is no valid JSKOS`)
+      console.error(`${typeName} ${id} in ${file} is no valid JSKOS`)
       error = 1
     }
   })
