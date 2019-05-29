@@ -1,52 +1,16 @@
 #!/usr/bin/env node
 
+const ndjson = require('fs-ndjson')
 const jskos = require("jskos-tools")
 const fs = require("fs")
 
 let schemes = []
 let count = 0
-console.log("Combining files...")
+console.log("Combining ndjson files...")
 
 process.argv.splice(2).forEach(file => {
   console.log(`Reading KOS from file ${file}...`)
-  let content = fs.readFileSync(file, "utf8")
-  let _schemes
-  let errors = []
-  if (file.endsWith(".ndjson")) {
-    _schemes = []
-    content.split("\n").forEach(json => {
-      if (!json) {
-        return
-      }
-      try {
-        let scheme = JSON.parse(json)
-        _schemes.push(scheme)
-      } catch(error) {
-        errors.push(error)
-      }
-    })
-  } else {
-    try {
-      _schemes = JSON.parse(content)
-    } catch(error) {
-      errors.push(error)
-    }
-  }
-  if (errors.length) {
-    console.error(`- ${errors.length} errors when reading KOS from file ${file}:`)
-    errors.forEach(error => {
-      console.error(`- ${error}`)
-    })
-    console.warn("- !!!!! Resulting KOS file will likely have missing entries !!!!!")
-  }
-  if (!Array.isArray(_schemes)) {
-    _schemes = [_schemes]
-  }
-  _schemes = _schemes.filter(scheme => scheme != null)
-  if (_schemes.length == 0) {
-    console.warn(`- No KOS read from file ${file}.`)
-    return
-  }
+  let _schemes = ndjson.readFileSync(file)
   console.log(`- Read ${_schemes.length} KOS from file ${file}.`)
   count += _schemes.length
   // Integrate _schemes into schemes
@@ -62,14 +26,9 @@ process.argv.splice(2).forEach(file => {
   }
 })
 
-console.log(`=> A total of ${count} KOS were combined into a resulting ${schemes.length} KOS.`)
-let file = "all.ndjson"
-console.log(`- Now writing to ${file}...`)
+console.log(`=> A total of ${count} KOS were combined into ${schemes.length} KOS.`)
 
-try {
-  let content = schemes.reduce((total, current) => total += `${JSON.stringify(current)}\n`, "")
-  fs.writeFileSync(file, content)
-  console.log(`- File written.`)
-} catch(error) {
-  console.error(`- Error writing to file: ${error}`)
-}
+let file = "all.ndjson"
+let content = schemes.reduce((total, cur) => total += `${JSON.stringify(cur)}\n`, "")
+fs.writeFileSync(file, content)
+console.log(`- All KOS written to ${file}`)

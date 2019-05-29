@@ -1,19 +1,21 @@
 # KOS Registry
 
-> Source files and script to aggregate information about concept schemes
+[![Build Status](https://travis-ci.org/gbv/kos-registry.svg?branch=master)](https://travis-ci.org/gbv/kos-registry)
 
-This repository is used to aggregate information about knowledge organization schemes relevant to project coli-conc.
+> Source files and script to aggregate information about knowledge organization schemes
+
+This repository is used to aggregate information *about* knowledge organization schemes (KOS) relevant to [project coli-conc](https://coli-conc.gbv.de/).
 
 ## Requirements
 
 * jq
-* npm (run `npm install`)
+* some npm modules (run `npm install`)
 
 ## Sources
 
-* `kos.yml` - YAML file with information about concept schemes
-* DANTE API
-* Wikidata
+* `kos.yml` (a YAML file with information about concept schemes)
+* [DANTE API](https://api.dante.gbv.de/)
+* [Wikidata](https://www.wikidata.org/)
 
 ## Usage
 
@@ -23,7 +25,9 @@ Calling `npm run all` will create the following files:
 * `wikidata.ndjson`
 * `dante.ndjson`
 
-It will also combine those files by merging overlapping concept schemes into `all.ndjson`.
+It will also combine those files by merging overlapping concept schemes into
+`all.ndjson`. Conflicting values are ignored so information in `kos.yaml` has
+priority.
 
 Call `npm run validate` to validate the files.
 
