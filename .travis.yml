@@ -5,3 +5,11 @@ node_js:
 script:
 - npm run all
 - npm run validate
+
+deploy:
+  provider: releases
+  api_key: "GITHUB OAUTH TOKEN"
+  file: kos-registry.json
+  skip_cleanup: true
+  on:
+    tags: true

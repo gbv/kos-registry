@@ -1,0 +1,15 @@
+---
+registry:
+  uri: https://coli-conc.gbv.de/terminologies/
+  url: https://github.com/gbv/kos-registry
+  prefLabel:
+    en: KOS Registry
+  license:
+  - uri: http://creativecommons.org/publicdomain/zero/1.0/
+    notation:
+    - CC0
+  publisher:
+  - prefLabel:
+      de: Verbundzentrale des GBV
+    notation:
+    - VZG      

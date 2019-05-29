@@ -10,12 +10,15 @@ This repository is used to aggregate information *about* knowledge organization 
 
 * jq
 * some npm modules (run `npm install`)
+* make
 
 ## Sources
 
 * `kos.yml` (a YAML file with information about concept schemes)
 * [DANTE API](https://api.dante.gbv.de/)
 * [Wikidata](https://www.wikidata.org/)
+
+File `registry.yaml` further contains metadata about this KOS registry.
 
 ## Usage
 
@@ -29,7 +32,7 @@ It will also combine those files by merging overlapping concept schemes into
 `all.ndjson`. Conflicting values are ignored so information in `kos.yaml` has
 priority.
 
-Call `npm run validate` to validate the files.
+Call `npm run validate` to validate the files. See `Makefile` for individual conversion steps.
 
 ## See also
 
