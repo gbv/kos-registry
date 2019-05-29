@@ -424,3 +424,15 @@ wd:
   - en
   license:
   - uri: http://creativecommons.org/publicdomain/zero/1.0/
+  
+zdb-fgs:
+  prefLabel:
+    de: ZDB-Fachgruppensystematik
+    en: ZDB-Classification
+  uri: https://bartoc.org/de/node/18915
+  notation:
+    - ZDB-FGS
+  type:
+  - http://w3id.org/nkos/nkostype#classification_schema
+  notationPattern: '[0-9]{3}'
+  namespace: http://uri.gbv.de/terminology/zdb-fgs/
