@@ -136,7 +136,7 @@ asb:
   - H
   type:
   - http://w3id.org/nkos/nkostype#classification_schema
-  - notationPattern: '[A-Z]+( [0-9]+)?'
+  notationPattern: '[A-Z]+( [0-9]+)?'
   
 
 ssd:
@@ -151,7 +151,7 @@ ssd:
   PICAPATH: 045B[01]$a
   type:
   - http://w3id.org/nkos/nkostype#classification_schema
-  - notationPattern: '[A-Z]+( [0-9]+)?'
+  notationPattern: '[A-Z]+( [0-9]+)?'
   
 
 sfb:
@@ -181,7 +181,7 @@ kab:
   PICAPATH: 045B[03]$a
   type:
   - http://w3id.org/nkos/nkostype#classification_schema
-  - notationPattern: '[A-Z]( [0-9]+(.?[0-9])?)?'
+  notationPattern: '[A-Z]( [0-9]+(.?[0-9])?)?'
 
 aadgenres:
   uri: https://bartoc.org/en/node/18627
@@ -222,7 +222,7 @@ nlm:
   - http://w3id.org/nkos/nkostype#classification_schema
   notation:
   - ÖSÖB
-  - notationPattern: '[A-Z]+(.[A-Z]+)?'
+  notationPattern: '[A-Z]+(.[A-Z]+)?'
 
 bos:
   prefLabel:
@@ -298,6 +298,7 @@ fbup:
   - http://w3id.org/nkos/nkostype#classification_schema
   notation:
   - FBUP
+  notationPattern: '[A-Z]+(-[A-Z]+)?'
 
 fud:
   prefLabel:
@@ -474,7 +475,8 @@ cerl:
     de: CERL Thesaurus
     en: CERL Thesaurus
   uri: https://bartoc.org/de/node/1413
-  notation: CERL
+  notation: 
+  - CERL
   type: 
   - http://w3id.org/nkos/nkostype#thesaurus
   notationPattern: '[a-z]{3}[0-9]{8}'
