@@ -16,4 +16,4 @@ registry.ndjson: registry.yaml
 	./yaml2ndjson.js registry $< > $@
 
 kos-registry.json: registry.ndjson all.ndjson
-	jq --slurpfile schemes all.ndjson '.+{schemes:$$schemes}' registry.ndjson > $@
+	jq --sort-keys --slurpfile schemes all.ndjson '.+{schemes:$$schemes}' registry.ndjson > $@
