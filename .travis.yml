@@ -5,6 +5,8 @@ node_js:
 script:
 - npm run all
 - npm run validate
+
+# release all master branch commits via GitHub releases
 deploy:
   provider: releases
   api_key:
@@ -12,6 +14,11 @@ deploy:
   skip_cleanup: true
   file: kos-registry.json
   on:
-    repo: gbv/kos-registry
-    tags: true
-    node_js: 8
+    branch: master
+    node_js: 11
+before_deploy:
+- git config --local user.name "Jakob Voß"
+- git config --local user.email "jakob.voss@gbv.de"
+- export TRAVIS_TAG=${TRAVIS_TAG:-$(date +'%Y%m%d.%H%M')}
+- git tag $TRAVIS_TAG  
+
