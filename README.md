@@ -1,36 +1,52 @@
 # KOS Registry
 
 [![Build Status](https://travis-ci.org/gbv/kos-registry.svg?branch=master)](https://travis-ci.org/gbv/kos-registry)
+[![GitHub Release](https://img.shields.io/github/release-date/gbv/kos-registry.svg)](https://github.com/gbv/kos-registry/releases/latest)
+![License](https://img.shields.io/github/license/gbv/kos-registry.svg)
 
 > Source files and script to aggregate information about knowledge organization schemes
 
-This repository is used to aggregate information *about* knowledge organization schemes (KOS) relevant to [project coli-conc](https://coli-conc.gbv.de/).
+This repository is used to aggregate information about knowledge organization
+schemes (KOS) relevant to [project coli-conc](https://coli-conc.gbv.de/). The
+information is aggregated from:
 
-## Requirements
-
-* jq
-* some npm modules (run `npm install`)
-* make
-
-## Sources
-
-* `kos.yml` (a YAML file with information about concept schemes)
+* YAML file `kos.yml` stored in this repository
 * [DANTE API](https://api.dante.gbv.de/)
 * [Wikidata](https://www.wikidata.org/)
 
-File `registry.yaml` further contains metadata about this KOS registry.
+KOS information from [BARTOC](https://bartoc.org/) will be added in a later
+version.
+
+YAML file `registry.yaml` in this repository further contains metadata about
+the aggregated KOS registry.
+
+## Releases
+
+Each commit to the `master` branch results in file `kos-registry.json`
+published [as GitHub release](https://github.com/gbv/kos-registry/releases).
+It's possible to download the latest release file this way:
+
+    wget -N $(curl -s https://api.github.com/repos/gbv/kos-registry/releases/latest | jq -r .assets[].browser_download_url)
+
+## Requirements
+
+To locally aggregate you need:
+
+* [jq](https://stedolan.github.io/jq/)
+* some npm modules (run `npm install`)
+* make
 
 ## Usage
 
-Calling `npm run all` will create the following files:
+Calling `npm run all` (or just `make`) will create the following files:
 
 * `kos.ndjson`
 * `wikidata.ndjson`
 * `dante.ndjson`
 
 It will also combine those files by merging overlapping concept schemes into
-`all.ndjson`. Conflicting values are ignored so information in `kos.yaml` has
-priority.
+`all.ndjson` and `kos-registry.json`. Conflicting values are ignored so
+information in `kos.yaml` has priority.
 
 Call `npm run validate` to validate the files. See `Makefile` for individual conversion steps.
 
