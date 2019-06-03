@@ -436,3 +436,15 @@ zdb-fgs:
   - http://w3id.org/nkos/nkostype#classification_schema
   notationPattern: '[0-9]{3}'
   namespace: http://uri.gbv.de/terminology/zdb-fgs/
+
+cerl:
+  prefLabel:
+    de: CERL Thesaurus
+    en: CERL Thesaurus
+  uri: https://bartoc.org/de/node/1413
+  notation:
+  - CERL
+  type: 
+  - http://w3id.org/nkos/nkostype#thesaurus
+  notationPattern: '[a-z]{3}[0-9]{8}'
+  namespace: http://uri.gbv.de/terminology/cerl/
