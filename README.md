@@ -26,7 +26,7 @@ Each commit to the `master` branch results in file `kos-registry.json`
 published [as GitHub release](https://github.com/gbv/kos-registry/releases).
 It's possible to download the latest release file this way:
 
-    wget -N $(curl -s https://api.github.com/repos/gbv/kos-registry/releases/latest | jq -r .assets[].browser_download_url)
+    wget -N $(curl -s https://api.github.com/repos/gbv/kos-registry/releases/latest | jq -r '.assets[].browser_download_url')
 
 ## Requirements
 
