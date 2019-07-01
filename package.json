@@ -2,7 +2,7 @@
   "name": "kos-registry",
   "description": "Source files and script to aggregate information about concept schemes",
   "scripts": {
-    "all": "make",
+    "all": "make -B",
     "wikidata": "wdjskos schemes > wikidata.ndjson",
     "validate": "jskos-validate schemes *.ndjson"
   },
