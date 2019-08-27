@@ -3,7 +3,7 @@
   "description": "Source files and script to aggregate information about concept schemes",
   "scripts": {
     "all": "make -B",
-    "wikidata": "wdjskos schemes > wikidata.ndjson",
+    "wikidata": "wdjskos schemes | grep '^{' > wikidata.ndjson",
     "validate": "jskos-validate schemes *.ndjson"
   },
   "author": "Jakob Voß",
