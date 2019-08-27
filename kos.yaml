@@ -450,7 +450,7 @@ wd:
   notation:
   - WD
   identifier:
-  - http://www.wikidata.org/entity/2013
+  - http://www.wikidata.org/entity/Q2013
   notationPattern: 'Q[0-9]+'
   languages:
   - de
