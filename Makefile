@@ -1,4 +1,4 @@
-default: kos-registry.json
+default: kos-registry.ndjson
 
 kos.ndjson: kos.yaml
 	./yaml2ndjson.js scheme $< > $@
@@ -17,3 +17,6 @@ registry.ndjson: registry.yaml
 
 kos-registry.json: registry.ndjson all.ndjson
 	jq --sort-keys --slurpfile schemes all.ndjson '.+{schemes:$$schemes}' registry.ndjson > $@
+
+kos-registry.ndjson: kos-registry.json
+	jq --sort-keys -c .schemes[] $< > $@
