@@ -505,3 +505,22 @@ nomisma:
     altLabel:
       en:
       - Nomisma
+
+sdnb:
+  uri: http://bartoc.org/en/node/18497
+  prefLabel:
+    de: Sachgruppen der Deutschen Nationalbibliografie
+  altLabel:
+    de:
+    - Systematik der Deutschen Nationalbibliographie
+  notation:
+  - SDNB
+  languages:
+  - de
+  identifier:
+  - http://www.wikidata.org/entity/Q67011877
+  - http://id.loc.gov/vocabulary/classSchemes/sdnb
+  publisher:
+  - prefLabel:
+      en: Deutsche Nationalbibliothek
+
