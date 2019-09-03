@@ -10,7 +10,7 @@ dante.ndjson:
 	curl -sk https://api.dante.gbv.de/voc/ | jq -c .[] > $@
 
 kos-registry.ndjson: kos.ndjson dante.ndjson wikidata.ndjson
-	./combine.js $?
+	./combine.js $? | jq --sort-keys . > $@
 
 registry.ndjson: registry.yaml
 	./yaml2ndjson.js registry $< > $@

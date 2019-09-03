@@ -2,16 +2,15 @@
 
 const ndjson = require('fs-ndjson')
 const jskos = require("jskos-tools")
-const fs = require("fs")
 
 let schemes = []
 let count = 0
-console.log("Combining ndjson files...")
+console.warn("Combining ndjson files...")
 
 process.argv.splice(2).forEach(file => {
-  console.log(`Reading KOS from file ${file}...`)
+  console.warn(`Reading KOS from file ${file}...`)
   let _schemes = ndjson.readFileSync(file)
-  console.log(`- Read ${_schemes.length} KOS from file ${file}.`)
+  console.warn(`- Read ${_schemes.length} KOS from file ${file}.`)
   count += _schemes.length
   // Integrate _schemes into schemes
   for (let scheme of _schemes) {
@@ -26,9 +25,6 @@ process.argv.splice(2).forEach(file => {
   }
 })
 
-console.log(`=> A total of ${count} KOS were combined into ${schemes.length} KOS.`)
+console.warn(`=> A total of ${count} KOS were combined into ${schemes.length} KOS.`)
 
-let file = "kos-registry.ndjson"
-let content = schemes.reduce((total, cur) => total += `${JSON.stringify(cur, Object.keys(cur).sort())}\n`, "")
-fs.writeFileSync(file, content)
-console.log(`- All KOS written to ${file}`)
+schemes.forEach(scheme => console.log(JSON.stringify(scheme)))
