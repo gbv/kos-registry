@@ -9,14 +9,11 @@ wikidata.ndjson:
 dante.ndjson:
 	curl -sk https://api.dante.gbv.de/voc/ | jq -c .[] > $@
 
-all.ndjson: kos.ndjson dante.ndjson wikidata.ndjson
+kos-registry.ndjson: kos.ndjson dante.ndjson wikidata.ndjson
 	./combine.js $?
 
 registry.ndjson: registry.yaml
 	./yaml2ndjson.js registry $< > $@
 
-kos-registry.json: registry.ndjson all.ndjson
-	jq --sort-keys --slurpfile schemes all.ndjson '.+{schemes:$$schemes}' registry.ndjson > $@
-
-kos-registry.ndjson: kos-registry.json
-	jq --sort-keys -c .schemes[] $< > $@
+kos-registry.json: registry.ndjson kos-registry.ndjson
+	jq --sort-keys --slurpfile schemes kos-registry.ndjson '.+{schemes:$$schemes}' registry.ndjson > $@

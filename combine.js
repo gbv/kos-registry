@@ -28,7 +28,7 @@ process.argv.splice(2).forEach(file => {
 
 console.log(`=> A total of ${count} KOS were combined into ${schemes.length} KOS.`)
 
-let file = "all.ndjson"
-let content = schemes.reduce((total, cur) => total += `${JSON.stringify(cur)}\n`, "")
+let file = "kos-registry.ndjson"
+let content = schemes.reduce((total, cur) => total += `${JSON.stringify(cur, Object.keys(cur).sort())}\n`, "")
 fs.writeFileSync(file, content)
 console.log(`- All KOS written to ${file}`)
