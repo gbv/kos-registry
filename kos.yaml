@@ -58,6 +58,8 @@ gnd:
 
 stw:
   uri: http://bartoc.org/en/node/313
+  identifier:
+  - http://zbw.eu/stw
   notation: ['STW']
   namespace: http://zbw.eu/stw/descriptor/
   notationPattern: '[0-9]+-[0-9]'
