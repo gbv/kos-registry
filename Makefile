@@ -1,4 +1,4 @@
-default: kos-registry.ndjson
+default: kos-registry.ndjson kos-registry.json
 
 kos.ndjson: kos.yaml
 	./yaml2ndjson.js scheme $< > $@
