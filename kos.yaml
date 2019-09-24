@@ -551,3 +551,14 @@ sdnb:
   - prefLabel:
       en: Deutsche Nationalbibliothek
 
+ubbi:
+  uri: http://bartoc.org/en/node/18891
+  prefLabel:
+    de: Systematik der Universitätsbibliothek Bielefeld
+    en: Classification system of Bielefeld University Library
+  notation:
+  - UBBI
+  languages:
+  - de
+  identifier:
+  - http://www.wikidata.org/entity/Q61809660
