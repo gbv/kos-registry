@@ -578,4 +578,22 @@ ssg:
   notationPattern: '[1-9][0-9]?(,[0-9]{1,3})?'
   namespace: http://uri.gbv.de/terminology/ssg/
 
+fid:
+  prefLabel:
+    de: FID-Klassifikation
+    en: FID classification
+  altLabel:
+    de: 
+    - Fachinformationsdienste für die Wissenschaft
+  uri: http://bartoc.org/en/node/18929
+  notation:
+  - FID
+  identifier:
+  - http://id.loc.gov/vocabulary/classSchemes/fid
+  - http://www.wikidata.org/entity/Q71787657
+  - http://uri.gbv.de/terminology/fid/
+  languages:
+  - de
+  notationPattern: 'FID-[A-Z]+'
+  namespace: http://uri.gbv.de/terminology/fid/
 
