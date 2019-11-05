@@ -357,7 +357,7 @@ gok:
   notation:
   - GOK
   notationPattern: '[A-Z]+ ([0-9]{3}|XXX)'
-  MARCSPEC: 080{$2=GOK}
+  MARCSPEC: 084{$2=GOK}
 
 
 dekla:
