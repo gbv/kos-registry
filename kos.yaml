@@ -611,4 +611,13 @@ fid:
   namespace: http://uri.gbv.de/terminology/fid/
   MARCSPEC: 080{$2=fid}
 
-
+thema:
+  prefLabel:
+    de: Thema Klassifizierung 
+    en: Thema subject classification scheme
+  uri: http://uri.gbv.de/terminology/thema
+  notation:
+    - thema
+  languages:
+    - de
+  namespace: http://uri.gbv.de/terminology/thema/
