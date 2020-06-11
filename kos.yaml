@@ -44,7 +44,7 @@ bk:
   CQLKEY: BKL
   EXAMPLES:
   - '86.78'
-  PICAPATH: 045Q[0X]$a
+  PICAPATH: 045Q[0.]$a
   MARCSPEC: 080{$2=bkl}
   type:
   - http://w3id.org/nkos/nkostype#classification_schema
@@ -564,6 +564,7 @@ sdnb:
   - prefLabel:
       en: Deutsche Nationalbibliothek
   MARCSPEC: 080{$2=sdnb}
+  PICAPATH: 045E$a
 
 ubbi:
   uri: http://bartoc.org/en/node/18891
