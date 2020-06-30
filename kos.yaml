@@ -563,8 +563,8 @@ sdnb:
   publisher:
   - prefLabel:
       en: Deutsche Nationalbibliothek
-  MARCSPEC: 080{$2=sdnb}
-  PICAPATH: 045E$a
+  MARCSPEC: 082{$2=sdnb}
+  PICAPATH: 045G$a
 
 ubbi:
   uri: http://bartoc.org/en/node/18891
