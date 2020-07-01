@@ -546,10 +546,11 @@ nomisma:
 sdnb:
   uri: http://bartoc.org/en/node/18497
   prefLabel:
-    de: Sachgruppen der Deutschen Nationalbibliografie
+    de: DDC-Sachgruppen
   altLabel:
     de:
     - Systematik der Deutschen Nationalbibliographie
+    - Sachgruppen der Deutschen Nationalbibliografie
   notation:
   - SDNB
   languages:
