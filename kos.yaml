@@ -544,27 +544,43 @@ nomisma:
       - Nomisma
 
 sdnb:
-  uri: http://bartoc.org/en/node/18497
   prefLabel:
-    de: DDC-Sachgruppen
+    de: Sachgruppen der DNB
   altLabel:
     de:
     - Systematik der Deutschen Nationalbibliographie
     - Sachgruppen der Deutschen Nationalbibliografie
   notation:
   - SDNB
-  languages:
-  - de
   identifier:
-  - http://www.wikidata.org/entity/Q67011877
   - http://id.loc.gov/vocabulary/classSchemes/sdnb
   - http://uri.gbv.de/terminology/sdnb
   namespace: http://uri.gbv.de/terminology/sdnb/
-  notationPattern: '[0-9]([0-9][0-9](\.[0-9][0-9]?)?)?|[BKS]'
   publisher:
   - prefLabel:
       en: Deutsche Nationalbibliothek
   MARCSPEC: 082{$2=sdnb}
+  PICAPATH: 045E$a
+
+ddcdnb:
+  uri: http://bartoc.org/en/node/18497
+  prefLabel:
+    de: DDC-Sachgruppen
+  altLabel:
+    de:
+    - DDC-Sachgruppen der deutschsprachigen Nationalbibliografien
+  notation:
+  - DDCDNB
+  languages:
+  - de
+  identifier:
+  - http://www.wikidata.org/entity/Q67011877
+  - http://uri.gbv.de/terminology/ddcdnb
+  namespace: http://uri.gbv.de/terminology/ddcdnb/
+  notationPattern: '[0-9]([0-9][0-9](\.[0-9][0-9]?)?)?|[BKS]'
+  publisher:
+  - prefLabel:
+      en: Deutsche Nationalbibliothek
   PICAPATH: 045G$a
 
 ubbi:
