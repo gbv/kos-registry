@@ -406,6 +406,17 @@ msc:
   - uri: http://creativecommons.org/licenses/by-nc/3.0/
   MARCSPEC: 080{$2=MSC}
 
+msc2020:
+  uri: http://uri.gbv.de/terminology/msc2020/
+  prefLabel:
+    en: Mathematics Subject Classification
+  notation:
+  - MSC2020
+  notationPattern: '\d\d(-(XX|\d\d)|[A-Z](xx|\d\d))'
+  namespace": http://uri.gbv.de/terminology/msc2020/
+  CQLKEY": MSC
+  PICAPATH": 045X$a{$i=MSC}
+
 skb:
   prefLabel:
     de: Sachbuch-Systematik für Katholische öffentliche Büchereien
