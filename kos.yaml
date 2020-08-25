@@ -390,7 +390,7 @@ fuld:
   - FULD
   notationPattern: '[a-z]{4}[0-9]+([+]| ff)?'
 
-msc:
+msc2010:
   prefLabel:
     en: Mathematics Subject Classification
   uri: http://bartoc.org/en/node/474
@@ -400,6 +400,7 @@ msc:
   type:
   - http://w3id.org/nkos/nkostype#classification_schema
   notation:
+  - MSC2010
   - MSC
   notationPattern: '[0-9]{2}(-XX|-[0-9]{2}|[A-Z](xx|[0-9]{2}))'
   license:
