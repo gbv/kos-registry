@@ -520,7 +520,7 @@ zdb-fgs:
   namespace: http://uri.gbv.de/terminology/zdb-fgs/
   MARCSPEC: 080{$2=zdbs}
 
-cerl:
+cerl: # in bartoc.gbv.de aktualisiert
   prefLabel:
     de: CERL Thesaurus
     en: CERL Thesaurus
@@ -532,7 +532,7 @@ cerl:
   notationPattern: '[a-z]{3}[0-9]{8}'
   namespace: http://uri.gbv.de/terminology/cerl/
 
-nomisma:
+nomisma: # in bartoc.gbv.de aktualisiert
   uri: http://nomisma.org/id/
   prefLabel:
     en: Nomisma
@@ -555,7 +555,7 @@ nomisma:
       en:
       - Nomisma
 
-sdnb:
+sdnb: # in bartoc.gbv.de eingefügt
   prefLabel:
     de: Sachgruppen der DNB
   altLabel:
