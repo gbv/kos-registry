@@ -574,7 +574,7 @@ sdnb:
   MARCSPEC: 082{$2=sdnb}
   PICAPATH: 045E$a
 
-ddcdnb:
+ddcdnb: # in bartoc.gbv.de aktualisiert
   uri: http://bartoc.org/en/node/18497
   prefLabel:
     de: DDC-Sachgruppen
@@ -595,7 +595,7 @@ ddcdnb:
       en: Deutsche Nationalbibliothek
   PICAPATH: 045G$a
 
-ubbi:
+ubbi: # in bartoc.gbv.de aktualisiert
   uri: http://bartoc.org/en/node/18891
   prefLabel:
     de: Systematik der Universitätsbibliothek Bielefeld
@@ -607,7 +607,7 @@ ubbi:
   identifier:
   - http://www.wikidata.org/entity/Q61809660
 
-ssg:
+ssg: # in bartoc.gbv.de aktualisiert
   prefLabel:
     de: Sondersammelgebiets-Nummer
   uri: http://bartoc.org/en/node/18928
@@ -643,7 +643,7 @@ fid: # in bartoc.gbv.de aktualisiert
   namespace: http://uri.gbv.de/terminology/fid/
   MARCSPEC: 080{$2=fid}
 
-thema:
+thema: # in bartoc.gbv.de aktualisiert
   prefLabel:
     de: Thema Klassifizierung 
     en: Thema subject classification scheme
