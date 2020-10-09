@@ -491,7 +491,7 @@ udc:
   notation:
   - UDC
 
-wd:
+wd: # in bartoc.gbv.de aktualisiert
   prefLabel:
     en: Wikidata
   uri: http://bartoc.org/en/node/1940
@@ -507,7 +507,7 @@ wd:
   - uri: http://creativecommons.org/publicdomain/zero/1.0/
   namespace: http://www.wikidata.org/entity/
 
-zdb-fgs:
+zdb-fgs: # in bartoc.gbv.de aktualisiert
   prefLabel:
     de: ZDB-Fachgruppensystematik
     en: ZDB-Classification
