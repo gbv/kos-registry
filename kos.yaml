@@ -1,5 +1,5 @@
 ---
-ddc:
+ddc:  # in bartoc.gbv.de aktualisiert
   uri: http://bartoc.org/en/node/241
   notation:
     - DDC
@@ -623,7 +623,7 @@ ssg:
   namespace: http://uri.gbv.de/terminology/ssg/
   MARCSPEC: 080{$2=ssgn}
 
-fid:
+fid: # in bartoc.gbv.de aktualisiert
   prefLabel:
     de: FID-Klassifikation
     en: FID classification
