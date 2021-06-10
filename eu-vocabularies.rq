@@ -1,0 +1,51 @@
+PREFIX cdm:    <http://publications.europa.eu/ontology/cdm#>
+PREFIX dstype: <http://publications.europa.eu/resource/authority/dataset-type/>
+PREFIX owl:    <http://www.w3.org/2002/07/owl#>
+PREFIX skos:   <http://www.w3.org/2004/02/skos/core#>
+
+SELECT * WHERE
+
+# Only Authority tables and thesaurus works will target BARTOC.org
+{
+    values ?type {
+    <http://publications.europa.eu/resource/authority/dataset-type/NAL>
+    <http://publications.europa.eu/resource/authority/dataset-type/THESAURUS>
+}
+   
+# As the system is not capable to work with multiple distributions,
+# SKOS CORE will be the only one listed
+values ?manifestation_type { 
+    "SKOS_CORE"^^<http://www.w3.org/2001/XMLSchema#string>
+}
+ 
+    ?complexWork owl:sameAs ?sameAsWork  .
+    ?complexWork a cdm:evolutive_work .
+    ?complexWork cdm:work_dataset_has_type_concept_type_dataset ?type .
+    Optional {
+       ?complexWork cdm:work_id ?work_id.
+    }
+    ?expressionCellarId cdm:expression_belongs_to_work ?complexWork .
+    ?manifestationCellarId cdm:manifestation_manifests_expression ?expressionCellarId .
+    ?manifestationCellarId cdm:manifestation_type ?manifestation_type .
+     
+    # standard fields from CDM
+    ?complexWork cdm:work_title ?title .
+    ?complexWork cdm:work_date_creation ?issued .
+    ?complexWork cdm:work_dataset_description_editorial  ?description .
+ 
+    # Multiple languages are available in BARTOC
+    # but it was not possible to import more than one
+    BIND("English" as ?s_lang )
+ 
+    # Multiple formats are available in BARTOC
+    # but it is not possible to import more than one
+    BIND("SKOS" as ?formats ) # To be replaced with generated field
+ 
+    # Specific adjustments to comply with BARTOC requirements
+    BIND(REPLACE(STR(?manifestationCellarId ),"(^.*[\\/#])(.*)$","$2") as ?guid)
+    BIND(REPLACE(STR(?type),"(^.*[\\/#])(.*)$","$2") as ?s1_type)
+    BIND(REPLACE(STR(?s1_type),"NAL","name authority list") as ?s2_type )
+    BIND(REPLACE(STR(?s2_type),"THESAURUS","thesaurus") as ?simple_type )
+    BIND(CONCAT(?work_title, " ", ?simple_type ) as ?alt_title )
+}
+order by ?sameAsWork 

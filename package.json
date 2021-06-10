@@ -4,7 +4,8 @@
   "scripts": {
     "all": "make -B",
     "wikidata": "wdjskos schemes > wikidata.ndjson",
-    "validate": "jskos-validate schemes *.ndjson"
+    "validate": "jskos-validate schemes *.ndjson",
+    "eu-vocabularies": "node eu-vocabularies.js"
   },
   "author": "Jakob Voß",
   "license": "MIT",
@@ -13,6 +14,7 @@
     "jskos-cli": "^0.2.9",
     "jskos-tools": "^0.2.9",
     "jskos-validate": "^0.2.2",
+    "sparql-http-client": "^2.4.0",
     "wikidata-jskos": "^0.3.1",
     "yaml": "^1.6.0"
   }
