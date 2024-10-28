@@ -6,6 +6,8 @@
 
 > Source files and script to aggregate information about knowledge organization schemes
 
+**This repository is obsolete. Use [BARTOC](https://bartoc.org/en/node/18926) ([API](https://bartoc.org/api/voc?partOf=http%3A%2F%2Fbartoc.org%2Fen%2Fnode%2F18926)) instead.**
+
 This repository is used to aggregate information about knowledge organization schemes (KOS) relevant to [project coli-conc](https://coli-conc.gbv.de/). The information is aggregated from:
 
 * YAML file `kos.yml` stored in this repository
